@@ -1,0 +1,26 @@
+{
+  "name": "template-express-pg-sequelize-rest-api",
+  "version": "1.0.0",
+  "description": "A starter project building a REST API using Express.js with PostgreSQL and Prisma on FL0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon -r dotenv/config src/index.js",
+    "start": "node src/index.js",
+
+    "db:seed": "cross-env NODE_ENV=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "swagger-ui-express": "^4.6.1"
+  }
+}
